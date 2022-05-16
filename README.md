@@ -20,6 +20,5 @@
 - [CSV 파일 읽기 및 저장](https://jhdroid.tistory.com/11)
 
 
-![1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/98be7baa-6ae3-4567-8994-d02faeda97f3/1.png)
-
-![2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/49dab5b9-f880-4d83-a569-93a2db75a892/2.png)
+![1](https://user-images.githubusercontent.com/71648406/168516255-4d98508d-ba55-42a5-9e75-cc7b6d8290b5.png)
+![2](https://user-images.githubusercontent.com/71648406/168516258-32a1758a-f457-4bfe-b35f-657bc3513a50.png)
