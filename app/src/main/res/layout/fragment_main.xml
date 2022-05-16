@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginVertical="32dp"
+        android:gravity="center"
+        android:text="센서 값 측정"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:theme="@style/Theme.MaterialComponents.DayNight"
+        app:layout_constraintBottom_toTopOf="@+id/main_scroll_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ScrollView
+        android:id="@+id/main_scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title_text">
+
+        <LinearLayout
+            android:id="@+id/main_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_all_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="모든 센서 측정"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_history_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="측정 기록 확인"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_gravity_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="중력 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_linear_acceleration_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="선형가속도계 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_rotaion_vector_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="회전벡터 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_accelometor_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="가속도계 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_gyroscope_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="자이로스코프 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_game_rotaion_vector_sensor_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="게임 회전 벡터 센서"
+                android:textColor="@color/black"
+                android:theme="@style/Theme.MaterialComponents.DayNight" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

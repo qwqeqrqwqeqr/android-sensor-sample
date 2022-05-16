@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">sensor</string>
+
+
+    <string name="navigation_main_label">MainFragment</string>
+    <string name="navigation_sensor_label">SensorFragment</string>
+    <string name="navigation_all_sensor_label">AllSensorFragment</string>
+    <string name="navigation_history_label">HistoryFragment</string>
+
+
+
+</resources>

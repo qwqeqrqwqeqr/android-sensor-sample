@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/main_fragment"
+    android:id="@+id/navigation_graph">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.qwqeqrqwqeqr.sensor.ui.MainFragment"
+        android:label="@string/navigation_main_label">
+
+
+        <action
+            android:id="@+id/action_main_to_sensor"
+            app:destination="@id/sensor_fragment" />
+
+        <action
+            android:id="@+id/action_main_to_all_sensor"
+            app:destination="@id/all_sensor_fragment" />
+
+        <action
+            android:id="@+id/action_main_to_history"
+            app:destination="@id/history_fragment" />
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/sensor_fragment"
+        android:name="com.qwqeqrqwqeqr.sensor.ui.sensor.SensorFragment"
+        android:label="@string/navigation_sensor_label">
+
+        <action
+            android:id="@+id/action_sensor_to_main"
+            app:destination="@id/main_fragment" />
+        <argument
+            android:name="sensorType"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <argument
+            android:name="sensorName"
+            app:argType="string"
+            android:defaultValue="센서" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/all_sensor_fragment"
+        android:name="com.qwqeqrqwqeqr.sensor.ui.sensor.AllSensorFragment"
+        android:label="@string/navigation_all_sensor_label">
+
+        <action
+            android:id="@+id/action_all_sensor_to_main"
+            app:destination="@id/main_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/history_fragment"
+        android:name="com.qwqeqrqwqeqr.sensor.ui.history.HistoryFragment"
+        android:label="@string/navigation_history_label">
+
+        <action
+            android:id="@+id/action_history_to_main"
+            app:destination="@id/main_fragment" />
+
+    </fragment>
+
+
+
+
+</navigation>
